@@ -35,13 +35,6 @@ namespace ExoticButters.FontBrowser
             await FetchGoogleFonts();
         }
 
-        private void PlayerPrefs.SetString("InstalledFonts", string.Join("|", installedFonts));
-            PlayerPrefs.Save()
-        {
-            PlayerPrefs.SetString("InstalledFonts", string.Join("|", installedFonts));
-            PlayerPrefs.Save();
-        }
-
         private async Task FetchGoogleFonts()
         {
             isLoading = true;
